@@ -43,7 +43,7 @@ print(employee_shape)
 more_employees.info()
 
 # Load dirty data
-dirty_data = pd.read_csv("../assignment3/dirty_data.csv")
+dirty_data = pd.read_csv("dirty_data.csv")
 print(dirty_data)
 
 clean_data = dirty_data.copy()
@@ -54,9 +54,11 @@ print(clean_data)
 clean_data["Age"] = pd.to_numeric(clean_data["Age"], errors="coerce")
 print(clean_data)
 
+
 clean_data["Salary"] = pd.to_numeric(clean_data["Salary"].replace(
     ["unknown", "n/a"], pd.NA), errors="coerce")
 print(clean_data)
+
 
 clean_data["Age"] = clean_data["Age"].fillna(clean_data["Age"].mean())
 clean_data["Salary"] = clean_data["Salary"].fillna(
