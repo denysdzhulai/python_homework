@@ -1,0 +1,4 @@
+product_id,line_item_count,total_revenue,product_name
+2,1,750.0,Headphones
+3,1,800.0,Keyboard
+1,2,3600.0,Laptop
