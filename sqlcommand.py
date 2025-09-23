@@ -1,4 +1,7 @@
-import readline  # Provides command line editing and history
+try:
+    import readline  # Provides command line editing and history
+except ImportError:
+    pass  # readline not available on Windows, but that's okay
 import sqlite3   # For SQL command execution
 import sys
 conn = sqlite3.connect("./db/lesson.db",isolation_level='IMMEDIATE')
