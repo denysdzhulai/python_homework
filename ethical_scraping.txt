@@ -1,0 +1,3 @@
+Websites use robots.txt to control how automated bots and crawlers interact with their content. 
+It protects server resources, prevents sensitive or irrelevant pages from being indexed, and sets clear boundaries for automation. 
+By respecting robots.txt, developers promote ethical scraping by ensuring they only access permitted content and avoid harming the site’s performance.
